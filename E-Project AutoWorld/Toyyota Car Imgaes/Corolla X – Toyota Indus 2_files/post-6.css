@@ -1,0 +1,36 @@
+.elementor-kit-6{color:#101010;font-family:"toyotatype–book", Sans-serif;font-size:16px;font-style:normal;text-decoration:none;line-height:24px;}.elementor-kit-6 a{color:#EB0A1E;}.elementor-kit-6 a:hover{color:#101010;}.elementor-kit-6 h1{color:#101010;font-family:"toyotatype–regular", Sans-serif;font-size:50px;text-decoration:none;line-height:80px;}.elementor-kit-6 h2{color:#101010;font-family:"toyotatype–regular", Sans-serif;font-size:36px;font-weight:400;text-decoration:none;line-height:48px;}.elementor-kit-6 h3{color:#101010;font-family:"toyotatype–bold", Sans-serif;font-size:36px;font-weight:bold;text-decoration:none;line-height:42px;}.elementor-kit-6 h4{color:#101010;font-family:"toyotatype–semibold", Sans-serif;font-size:24px;font-weight:600;text-decoration:none;line-height:40px;}.elementor-kit-6 h5{color:#101010;font-family:"toyotatype–semibold", Sans-serif;font-size:20px;font-weight:600;text-decoration:none;line-height:24px;}.elementor-kit-6 h6{color:#101010;font-family:"toyotatype–semibold", Sans-serif;font-size:18px;text-decoration:none;line-height:20px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1200px;}.e-con{--container-max-width:1200px;}.elementor-widget:not(:last-child){margin-bottom:20px;}.elementor-element{--widgets-spacing:20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-lightbox{background-color:#000000F2;--lightbox-text-color:#FFFFFF;}.elementor-kit-6 e-page-transition{background-color:#FFBC7D;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-kit-6 h2{font-size:28px;line-height:36px;}.elementor-kit-6 h3{font-size:26px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'toyotatype–book';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-book-webfont.woff2') format('woff2'),
+		url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-book-webfont.woff') format('woff');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'toyotatype–regular';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-regular-webfont.woff2') format('woff2'),
+		url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-regular-webfont.woff') format('woff');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'toyotatype–bold';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-bold-webfont.woff2') format('woff2'),
+		url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-bold-webfont.woff') format('woff');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'toyotatype–semibold';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-semibold-webfont.woff2') format('woff2'),
+		url('https://toyota-indus.com/wp-content/uploads/2022/09/toyotatype-semibold-webfont.woff') format('woff');
+}
+/* End Custom Fonts CSS */

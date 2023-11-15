@@ -1,0 +1,113 @@
+
+function resetAllDropdowns() {
+    jQuery('.dealers_dd,.cars_dd,.models_dd').find('option').remove();
+}
+
+function resetCarsAndModels() {
+    jQuery('.cars_dd,.models_dd').find('option').remove();
+}
+
+function resetCars() {
+    jQuery('.models_dd').find('option').remove();
+}
+
+function initCities() {
+    jQuery.ajax({
+        type: "GET",
+        url: 'https://toyota-indus.com/wp-content/uploads/test-drive/get-cities.php?v=static',
+        timeout: 60000,
+        success: function(data, textStatus, xhr) {
+            jQuery('.city_dd').html(data);
+            //alert("test");
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            //alert(textStatus);
+        }
+    });
+}
+
+function getDealers() {
+
+   // var city = jQuery(".city_dd").val();
+    var city1 = jQuery(".city_dd");
+    var city;
+    
+    for(var i = 0; i < city1.length; i++){
+        if((jQuery(city1[i]).val())!="" )
+        {
+            city= jQuery(city1[i]).val();
+           // console.log(city);
+        }
+    }
+    
+    
+    jQuery.ajax({
+        type: "GET",
+        url: 'https://toyota-indus.com/wp-content/uploads/test-drive/get-dealers.php?v=static&city=' + city,
+        timeout: 60000,
+        success: function(data, textStatus, xhr) {
+            jQuery('.dealers_dd').html(data);
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            alert(textStatus);
+        }
+    });
+}
+
+function getCarsList() {
+    var dealer = jQuery(".dealers_dd").val();
+
+    jQuery.ajax({
+        type: "GET",
+        url: 'https://toyota-indus.com/wp-content/uploads/test-drive/get-cars.php?dealer=' + dealer,
+        timeout: 60000,
+        success: function(data, textStatus, xhr) {
+            jQuery('.cars_dd').html(data);
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            alert(textStatus);
+        }
+    });
+}
+
+function getModelsList() {
+    var car = jQuery(".cars_dd").val();
+    var dealer = jQuery(".dealers_dd").val();
+    jQuery.ajax({
+        type: "GET",
+        url: 'https://toyota-indus.com/wp-content/uploads/test-drive/get-models.php?car=' + car + '&' + 'dealer=' + dealer,
+        timeout: 60000,
+        success: function(data, textStatus, xhr) {
+            jQuery('.models_dd').html(data);
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            alert(textStatus);
+        }
+    });
+}
+
+jQuery('.city_dd').change(function() {
+    resetAllDropdowns();
+    getDealers();
+})
+jQuery('.dealers_dd').change(function() {
+    resetCarsAndModels()
+    getCarsList();
+})
+jQuery('.cars_dd').change(function() {
+    resetCars()
+    getModelsList();
+})
+initCities();
+  
+
+
+
+
+
+
+
+
+
+
+
